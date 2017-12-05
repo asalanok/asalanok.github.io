@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans/Semibold/OpenSansSemibold.eot');
+    src: url('../fonts/OpenSans/Semibold/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/Semibold/OpenSansSemibold.woff2') format('woff2'),
+         url('../fonts/OpenSans/Semibold/OpenSansSemibold.woff') format('woff'),
+         url('../fonts/OpenSans/Semibold/OpenSansSemibold.ttf') format('truetype'),
+         url('../fonts/OpenSans/Semibold/OpenSansSemibold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans/Bold/OpenSansBold.eot');
+    src: url('../fonts/OpenSans/Bold/OpenSansBold.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/Bold/OpenSansBold.woff2') format('woff2'),
+         url('../fonts/OpenSans/Bold/OpenSansBold.woff') format('woff'),
+         url('../fonts/OpenSans/Bold/OpenSansBold.ttf') format('truetype'),
+         url('../fonts/OpenSans/Bold/OpenSansBold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans/Light/OpenSansLight.eot');
+    src: url('../fonts/OpenSans/Light/OpenSansLight.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/Light/OpenSansLight.woff2') format('woff2'),
+         url('../fonts/OpenSans/Light/OpenSansLight.woff') format('woff'),
+         url('../fonts/OpenSans/Light/OpenSansLight.ttf') format('truetype'),
+         url('../fonts/OpenSans/Light/OpenSansLight.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans/Regular/OpenSansRegular.eot');
+    src: url('../fonts/OpenSans/Regular/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/Regular/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSans/Regular/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSans/Regular/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSans/Regular/OpenSansRegular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'PobedaRegular';
+    src: url('../fonts/PobedaRegular/pobedaregular.eot');
+    src: url('../fonts/PobedaRegular/pobedaregular.eot') format('embedded-opentype'),
+         url('../fonts/PobedaRegular/pobedaregular.woff2') format('woff2'),
+         url('../fonts/PobedaRegular/pobedaregular.woff') format('woff'),
+         url('../fonts/PobedaRegular/pobedaregular.ttf') format('truetype'),
+         url('../fonts/PobedaRegular/pobedaregular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'PobedaBold';
+    src: url('../fonts/PobedaBold/pobedabold.eot');
+    src: url('../fonts/PobedaBold/pobedabold.eot') format('embedded-opentype'),
+         url('../fonts/PobedaBold/pobedabold.woff2') format('woff2'),
+         url('../fonts/PobedaBold/pobedabold.woff') format('woff'),
+         url('../fonts/PobedaBold/pobedabold.ttf') format('truetype'),
+         url('../fonts/PobedaBold/pobedabold.svg') format('svg');
+}

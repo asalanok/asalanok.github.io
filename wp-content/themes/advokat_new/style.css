@@ -1,0 +1,700 @@
+﻿/*   
+Theme Name: Advokat Ulischenko
+Description: Adaptive theme for Responsive devices
+Author: Sergey Smirnov, 
+Author URI: http://www.onlysites.ru/?from=advokatulischenko
+*/
+
+@charset "utf-8";
+
+HTML{-webkit-text-size-ajust: 100%;}
+BODY {background: #FFF; font-family: "OpenSans", Tahoma, Arial, Helvetica, sans-serif; overflow-x: hidden;}
+
+A {color:#000; text-decoration: underline;}
+	A:link {color:#000; text-decoration: underline;}
+	A:visited {color:#019875; text-decoration: underline;}
+	A:hover {color:#019875; text-decoration: none;}
+	A:active {color:#000; text-decoration: underline;}
+	
+P {padding-bottom: 0.6em;}
+LI UL LI {padding-bottom: 0.6em;}
+
+H1 {font-family:"PobedaBold", sans-serif !important; font-size: 3.4375em; line-height: 3.75em; text-align: left;}
+	H1 A {}
+	H1 A:link {}
+	H1 A:visited {}
+	H1 A:hover {}
+	H1 A:active {}
+
+H2 {font-family:"PobedaBold", sans-serif !important; font-size: 3.44em; text-align: left;}
+
+H3, H4, H5 {}
+H3, H4, H5 A {}
+	H3, H4, H5 A:link {}
+	H3, H4, H5 A:visited {}
+	H3, H4, H5 A:hover {}
+	H3, H4, H5 A:active {}
+
+STRONG {font-weight: bold;}
+OL, UL {-padding-bottom: 0.6em;}
+TABLE {}
+BLOCKQUOTE {}
+
+/*
+	site styles 
+	шапка
+	*/
+
+.top-outer{background: #FFF url("images/top-bgr.jpg") top repeat; overflow: hidden;}
+
+header.site-header{}
+header.site-header .logo { position: relative; }
+header.site-header .logo h1 {
+	position: absolute;
+	margin: 0;
+	top: 10px;
+	left: 26%;
+	font-size: 1.2em;
+	color: #fff;
+}
+header.site-header img.logo{padding: 1.3em 0; -margin-top: 1.3em;}
+
+header.site-header .top-menu{float: right; padding: 0.3em 0 0 0; height: 6em; overflow: hidden;}
+header.site-header .top-menu UL{margin:0; padding: 0; dispaly: block; height: 6em; line-height: 6em; float: right;}
+header.site-header .top-menu UL LI {float: left; display: block;}
+header.site-header .top-menu UL LI A{dispaly: block; font-size: 0.875em; -line-height: 3.5em; padding-right: 2.75em; color: #fff; text-transform: uppercase; text-decoration: none; font-family: "OpenSansRegular", Tahoma, Arial, Helvetica, sans-serif;}
+header.site-header .top-menu UL LI A:link{text-decoration:none;}
+header.site-header .top-menu UL LI A:visited{text-decoration:none;}
+header.site-header .top-menu UL LI A:hover{text-decoration:none; text-shadow: 0px 0px 4px #ccc !important;}
+header.site-header .top-menu UL LI A:active{text-decoration:none; text-shadow: 0px 0px 4px #ccc !important;}
+
+.icons-header {padding-top: 2.2em;}
+.icons-header a{display: block; padding: 6px;} 
+.icon-search{padding-right: 35px;}
+.icon-menu{}
+
+/*
+	поле поиска на главной
+	*/
+	
+.search-form .search-input{display:inline; width:14em; height: 26px; line-height: 26px; border: 1px solid #fff; border-radius:2px;-o-border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;font-size:0.75em;color:#c1c1c1;padding-right:1.125em; margin-right: 1.125em; text-align: left;padding-left:0.625em;background:transparent;padding: 0 10px;margin-right: 17px;}
+
+/*
+	hidden
+	*/
+	
+.hidden{display: none;}
+
+.mobile-catalog-tab{display: none;}
+.mobile-catalog{display: none;}
+
+.mobile-projects-tab{display: none;}
+.mobile-projects{display: none;}
+
+/*
+	about
+	о нас 
+	*/
+
+.address-block-mobile{display: none !important;}
+	
+.about, .address-block{padding: 1.8em 0;}
+.about .about-slogan{font-size: 0.875em;}
+.about .about-slogan a{text-decoration: none !important;}
+.about .about-name{font-size: 1.5em!important; line-height: 1.4em; padding: 0.2em 0; font-family: "OpenSansRegular", sans-serif; text-transform: uppercase;}
+.about .about-name a,.about .about-name a:hover{text-decoration: none !important;}
+.about .about-text{font-size: 0.8125em; color: #737373;}
+
+.address{padding: 0.4em 0 0.4em 5em !important; background:url("images/icon-moscow.png") 0 13px no-repeat; font-family: "OpenSansLight", sans-serif; line-height: 24px;}
+
+#phone{text-align: center; white-space:nowrap;}
+#phone a{text-align: center; text-decoration: none; font-size: 1.75em; font-family: "OpenSansSemibold", sans-serif;}
+.phone{}
+.phone-block{}
+.phone-slogan{color: #727272; text-align: center; text-decoration: none; font-size: 0.8em;}
+.phone-slogan span {
+	font-weight: bold;
+}
+
+.form-block{padding-top: 3.25em; margin-left: 22px;}
+.callback-order-image{text-align: left; padding: 0; margin: 0;}
+.callback-order-form .callback-order-form-input{width: 99%; margin: 0 auto; height:2.375em; font-size: 12px /*0.75em*/; color:#737373; border:1px solid #727272; border-radius: 2px; background:url("images/star-bgr.png") no-repeat right top; padding: 0 10px;}
+
+/*
+	block1
+	главная страница. блок сотрудники
+	*/
+
+.block1-outer{background: #FFF url("images/block1-bgr.jpg") top repeat; height: 26.3125em;} /*19*/
+.block1{}
+
+.block1 h1{color: #fff; background:url("images/block1-h1-bgr.jpg") bottom left no-repeat; line-height: 1.3em; padding-left: 1.3em; position: relative; left: -1.3em;}
+.block1 .uppertext{color:#fff; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+.block1-left{background:url("images/block1-bgr-image.png") 200px 40px no-repeat;}	
+
+.block1-left .block1-left-inner{}
+.block1-left .block1-left-inner .uppertext a{color: #fff; text-decoration: none; background: none;}
+.block1-left .block1-left-inner h1 a{color: #fff; text-decoration: none; background: none;}
+
+/*.block1-left-inner{background:url("images/arrows-bgr-main.png") bottom center no-repeat;}*/
+
+
+/*
+	block-personal
+	сотрудники
+	*/
+
+.block-personal-outer{background: #FFF url("images/block1-bgr.jpg") top repeat; height: auto; }
+.block-personal{color: #fff;}
+.block-personal-left{}
+.block-personal-left-inner{}
+
+.block-personal h1{color: #fff; background:url("images/block1-h1-bgr.jpg") bottom left no-repeat; line-height: 1.3em; padding-left: 1.3em; position: relative; left: -1.3em;}
+.block-personal .uppertext{color:#fff; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+.block-personal-left{padding-bottom: 2.75em; background:url("images/block1-bgr-image.png") 350px 40px no-repeat;}
+
+.block-personal .persona-h1{font-size: 1em;}
+.block-personal .persona-h1 a{color: #fff;}
+.block-personal .persona-h2{font-size: 1.5em; text-transform: uppercase; padding: 1em 0 2em 0;} 
+.block-personal .persona-h2 a{color: #fff;}
+.block-personal .persona-desc{font-size: 1em;}
+.block-personal .persona-description a{color: #fff;}
+.block-personal a.persona-btn{font-size: 0.875em; color: #019875; -display: block; background:url("images/arrow.png") no-repeat right; padding-right: 20px;}
+
+.project-style-1{font-size: 0.875em; font-family: "OpenSansLight", sans-serif;}
+.project-style-2{font-size: 1.25em; font-family: "OpenSansRegular", sans-serif;}
+
+/*
+	block-personal-small
+	*/
+	
+.block-personal-small-outer{padding: 65px 0;}
+.block-personal-small{padding: 25px 0;}
+.block-personal-small-item{padding: 12px 0;}
+.block-personal-small .persona-h1{font-size: 13px; padding: 18px 0 36px 0;}
+.block-personal-small .persona-h2{font-size: 15px; height: 44px; text-transform: uppercase;} 
+.block-personal-small .persona-description{padding:0;margin:0;}
+/*.block-personal-small a.persona-btn{font-size: 0.875em; color: #019875; -display: block; background:url("images/arrow.png") no-repeat right; padding-right: 20px;}*/
+.block-personal-small a.persona-btn{content:"";display:block;width:11.625em;height:3.125em;background:url("images/personals-button.png")no-repeat;background-size:contain;}
+
+
+/*
+	block-work
+	рабочая страница
+	*/
+
+.block-work-left-outer {background: url("images/block-work-left-bgr.png") right top no-repeat; position: absolute; z-index: -1; left: 0; height: 1220px; width: 26%; background-size: cover;}
+.block-work-left{background: url("images/block-work-left-bgr.png") right top no-repeat; margin-bottom: 2em; padding-left:0!important; margin-left:0!important; height: 1220px; background-size: cover;}
+.block-work-outer {}
+.block-work-outer .block-work h1, .block-work-outer .block-work h1 a{text-decoration: none; background:url("images/block1-h1-bgr.jpg") bottom left no-repeat; line-height: 1.3em !important; padding-left: 1.3em; margin-bottom: 1em !important; padding-bottom: 0 !important; position: relative; left: -1.3em;font-size: 36px;}
+.block-work-outer .block-work .block-work-left {-background:url("images/block-work-left-bgr.png") top left repeat; -margin-left: -15%; padding-right: 60px;}
+.block-work-outer .block-work .uppertext, .wins .uppertext {color:#fff; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+.block-work-outer .block-work .projects-block{padding-left: 9px;}
+
+.block-work-outer .block-work .block-projects {-padding-bottom: 3em; height: 600px;}
+
+
+/*
+	corners top and bottom
+	уголки на главной, в блоке услуг
+	*/
+
+.block1-right-top{background: #fff url("images/corners-top.png") no-repeat bottom; background-size: contain; height: 1.875em;margin-top:-1.875em; }
+.block1-right-bottom{background: #fff url("images/corners-bottom.png") no-repeat top; background-size: contain; height: 1.875em; -margin-top:-1.875em; }
+
+.block1-right{background: #fff; padding: 2.3125em 0.6875em; border-left:2px solid #019875;border-right:2px solid #019875;}
+	
+	.block1-right h2{font-family: "OpenSansBold", sans-serif !important;font-weight: bold;font-size:1.25em; text-transform: uppercase;}
+	.block1-right a{font-family: "OpenSansLight", sans-serif; font-size: 0.87em !important; line-height:1.75em;}
+	.block1-right a:link{color:#000;}
+	.block1-right a:visited{color:#000;}
+	.block1-right a:hover{color:#019875;text-decoration:none;}
+	.block1-right a:active{color:#000;}
+	
+	.block1-right a.link-more {color:#019875;font-size:0.875em;}
+	.block1-right a.link-more:hover {color:#019875;font-size:0.875em;}
+	
+	.block1-right-fl{padding: 0 0 4.25em 0;}
+	.block1-right-ul{padding: 0 0 4.25em 0;}
+	.block1-right-ab{padding: 0 0 4.25em 0;}
+
+	/*
+		hide menu items more when 3 
+		скрывать более 3 пунктов меню блока на главной
+		*/
+	
+	.block1 #menu-fizicheskie li:nth-child(n+4){display:none;}
+	.block1 #menu-yuridicheskie li:nth-child(n+4){display:none;}
+	.block1 #menu-abonentskie li:nth-child(n+4){display:none;}
+
+	
+	
+	.projects-block{padding: 1em 0 2em 0; display:block;border-bottom:2px solid #222220;}
+	.projects-block:hover{border-bottom: 2px solid #019875;}
+		.projects-image {width:2.625em;}
+		.projects-header {font-family: "OpenSansBold", sans-serif; font-size: 1em; text-transform: uppercase;position: relative; left: 0.6em;}
+		.projects-link {position: relative; left: 0.6em;}
+		.projects-link a {-display:block;background:url("images/projects-arrow.png") center right no-repeat; font-family: "OpenSansRegular", sans-serif; font-size: 0.875em; color: #737373 !important; padding-right: 20px !important;}
+		.projects-link a:hover {-display:block;background:url("images/projects-arrow-active.png") center right no-repeat;font-family: "OpenSansRegular", sans-serif; font-size:0.875em; color: #019875 !important; padding-right: 20px !important;}
+	
+/*
+	flexi-slider slides
+	наши успехи (слайдер)
+	*/
+
+.achievement-slides	{min-height: 102px;} 
+.slides{}
+.slides .slider1-desc h3{font-family: "OpenSansLight", sans-serif !important;color:#fff;font-size:0.85em;line-height:22px;}
+.slides .slider1-desc h3 a{color:#fff;text-decoration:none;color:#fff;}
+.slides .slider1-desc h3 a:hover{color:#fff;text-decoration:none;color:#fff;}
+.slides .slider1-desc h3 *{color:#fff;}
+
+.slides .slider1-header h2{font-family: "OpenSansLight", sans-serif !important;font-size: 1.2em;line-height: 27px;color: #fff;}
+
+.slides a.link-more {color:#019875;font-size:0.875em;}
+.slides a.link-more:hover {color:#019875;font-size:0.875em;}
+
+/*
+	block2 personal
+	сотрудники на главной странице (слайдер 1)
+	*/
+
+.team-outer{}
+
+.block2 h1{background: #fff url("images/block1-h1-bgr.jpg") bottom left no-repeat !important; line-height: 1.3em; padding-left: 1.3em; position: relative; left: -1.3em; margin-bottom: 1em;}
+.block2 .uppertext{color:#fff; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+	
+.office-photo{-padding-right: 0 !important; margin-top: 7em;}
+
+.personal .persona-photo{margin-top: 5.125em; max-height: 255px; overflow: hidden;}
+.personal .persona-description{border-top: 5px solid #f1f1f1; border-right: 5px solid #f1f1f1; border-bottom: 5px solid #f1f1f1; display: block;margin-left: -1.25em;padding: 0.75em 2.75em 1.75em 2.75em;}
+
+.personal .persona-h1{font-family: "OpenSansLight", sans-serif; font-size: 1.25em;}
+.personal .persona-h2{font-family: "OpenSansRegular", sans-serif; text-transform: uppercase; font-size: 2em; padding: 1em 0;}
+.personal .persona-h2 a{text-decoration: none !important;; color: #000 !important;}
+.personal .persona-h2 a:hover{text-decoration: none !important; color: #000 !important;}
+.personal .persona-h2 a:active{text-decoration: none !important; color: #000 !important;;}
+.personal .persona-desc{font-family: "OpenSansLight", sans-serif; font-size: 1em; height: 100px; overflow: hidden;}
+.personal .persona-h2 a{text-decoration: none!important; color: #000!important;}
+.personal .persona-h2 a:hover{text-decoration: none!important; color: #000!important;}
+.personal .persona-h1 a{text-decoration: none; color: #000!important;}
+.personal .persona-h1 a:hover{text-decoration: none; color: #000!important;}
+.personal .persona-desc a{text-decoration: none!important; color: #000!important;}
+.personal .persona-desc a:hover{text-decoration: none!important; color: #000!important;}	
+.personal .persona-desc p{font-family: "OpenSansLight", sans-serif; font-size: 1em;}
+.personal .persona-desc strong{font-family: "OpenSansLight", sans-serif; font-size: 1em;}
+.personal a.persona-btn{content:"";display:block;width:11.625em;height:3.125em;background:url("images/personals-button.png")no-repeat;background-size:contain;}
+
+/*
+	personal work
+	сотрудники на рабочей странице (слайдер 2)
+	*/
+	
+.personal-work{}
+
+.personal-work .persona-photo{margin: 0 !important; width: 30%; float: left;}
+.personal-work .persona-description{border:0; display: block; margin: 0 0 0 5%; padding: 0; width: 60%; float: left;}
+
+.personal-work .persona-h1{font-size: 1em; padding-top: 10px;}
+.personal-work .persona-h2{font-size: 1.5em; padding: 1em 0;}
+.personal-work .persona-desc{font-size: 1em; height: 100px; -overflow: hidden;}
+	.personal-work .persona-desc p{font-size: 1em;}
+	.personal-work .persona-desc strong{font-size: 1em;}	
+	.personal-work a.persona-btn{content:"";display:block;width:10em;height:3em;background:url("images/personals-button.png")no-repeat;background-size:contain;padding-top: 12px;}
+.personal-work .slides li{border: 5px solid #f1f1f1; padding: 0 0 3.6em 0; }
+.personal-work .slides li div.slide{}
+
+
+/*
+	personal page
+	*/
+	
+.persona-photo-page{
+	padding: 0 30px 0 0;
+}
+.personal-wins { border: 5px solid #f1f1f1; margin-bottom: 55px; padding: 10px; position: relative; }
+// .personal-wins .persona-photo{max-height: 255px; overflow: hidden;}
+.personal-wins .persona-photo { float: left; margin: 0 10px 10px 0; width: 50%; }
+.personal-wins .persona-photo img{max-width: 100%; /* height: 230px; */ display: block; }
+.personal-wins .persona-h1{font-family: "OpenSansLight", sans-serif; font-size: 1em;}
+.personal-wins .persona-h2{font-family: "OpenSansRegular", sans-serif; text-transform: uppercase; font-size: 12px; padding: 1em 0;}
+.personal-wins .persona-description{padding-left: 5px;}
+.personal-wins .persona-h2 a{text-decoration: none !important; color: #000 !important; }
+.personal-wins .persona-h2 a:hover{text-decoration: none !important; color: #000 !important;}
+.personal-wins .persona-h2 a:active{text-decoration: none !important; color: #000 !important;;}
+.personal-wins .persona-desc{font-family: "OpenSansLight", sans-serif; font-size: 0.8em; overflow: hidden;}
+.personal-wins .persona-h2 a{text-decoration: none!important; color: #000!important;}
+.personal-wins .persona-h2 a:hover{text-decoration: none!important; color: #000!important;}
+.personal-wins .persona-h1 a{text-decoration: none; color: #000!important;font-style: italic;}
+.personal-wins .persona-h1 a:hover{text-decoration: none; color: #000!important;}
+.personal-wins .persona-desc a{text-decoration: none!important; color: #000!important;}
+.personal-wins .persona-desc a:hover{text-decoration: none!important; color: #000!important;}	
+.personal-wins .persona-desc p{font-family: "OpenSansLight", sans-serif; font-size: 1em;}
+.personal-wins .persona-desc strong{font-family: "OpenSansLight", sans-serif; font-size: 1em;}
+.personal-wins a.persona-btn{content:"";display:block;width:11em;height:3.125em;background:url("images/personals-button.png")no-repeat;background-size:contain;margin-top: 10px;}
+
+.personal-wins .custom-navigation {
+	position: absolute;
+	bottom: 0;
+}
+
+.flexslider-2.personal-wins .flex-prev { top: -10px; left: 200px; }
+.flexslider-2.personal-wins .flex-next { top: -10px; left: 260px; }
+
+
+.content-page{
+	
+}
+
+.content-page .p_left{
+	width: 50%;
+	float: right;
+}
+
+.content-page p{
+	padding-top: 0 !important;
+}
+
+.content-page h2{
+	padding-top: 20px;
+	font-family: "OpenSansBold", sans-serif !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+	background: url("images/block1-h1-2-bgr.png") bottom left no-repeat !important;
+    padding-bottom: 4px !important;
+    padding-left: 1.3em;
+	margin-bottom: 1em !important;
+    text-decoration: none;
+    position: relative;
+    left: -1.3em;
+	
+}
+
+.content-page .advantage-header{position: relative; left: -6px;}
+.content-page .advantage-header h1{padding-left: 0.4em!important;left: -0.4em!important;}
+.content-page .advantage-header h1 a{background: none; color: #000;}
+
+/*
+.content-page h2{
+	font-family: "PobedaBold", sans-serif !important;
+    font-size: 36px !important;
+	background: url("images/block1-h1-bgr.jpg") bottom left no-repeat;
+    line-height: 1.3em !important;
+    padding-bottom: 0 !important;
+    padding-left: 1.3em;
+    margin-bottom: 1em !important;
+    text-decoration: none;
+    position: relative;
+    left: -1.3em;
+}
+*/
+.content-page ul{
+	padding-top: 0 !important;
+}
+
+.content-page ul li{
+}
+
+.content-page ul li h3{
+	padding:0 !important;
+	margin:0 !important;
+}
+
+.content-page ul li a, .content-page ul li h3 a{
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 13px;
+    color: #000;
+	text-decoration: underline;
+    padding-bottom: 1.25em !important;
+	margin-top: 0 !important;
+	display: block;
+}
+
+/*
+	menu left
+	меню слева
+	*/
+	
+.menu-left{
+	padding: 0;
+}
+
+.menu-left a{
+	font-family: "OpenSansRegular", sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #80e5cc;
+	line-height: 32px;
+}
+
+.menu-left a:hover{
+	font-family: "OpenSansRegular", sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	white-space: nowrap;
+	color: #80e5cc;
+	line-height: 32px;
+}
+
+.menu-left-header{	
+	font-family: "OpenSansBold", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	font-size: 14px;
+	padding: 12px 0;
+	white-space: nowrap;
+}
+
+.menu-left-item {padding-left: 10px;color: #80e5cc;}
+.menu-left-item a{color: #80e5cc;}
+.menu-left-item a:link{color: #80e5cc;}
+.menu-left-item a:visited{color: #80e5cc;}
+.menu-left-item a:hover{color: #80e5cc;}
+.menu-left-item a:active{color: #80e5cc;}
+
+
+/*
+	services
+	наши услуги
+	*/
+
+.services{padding-left: 45px !important;}
+.services-item{padding-bottom: 90px;}
+.services-item a{font-size: 0.875em; color: #019875; background:url("images/arrow.png") no-repeat right; padding-right: 20px; position: relative; top: 21px; }
+
+	
+/*
+	advantages links
+	достижения, ссылки
+	*/
+
+.advantages {padding-left: 45px !important;}
+.advantages a{display: block; color: #000; text-decoration: underline; font-size: 0.875em; padding-bottom: 1.25em;}
+.advantages a:hover{display: block; color: #000; text-decoration: underline; font-size: 0.875em; padding-bottom: 1.25em;}
+
+.advantage-header{position: relative; left: 20px;clear:both;}
+.block-work-outer .block-work .advantage-header h1 {background:url("images/block1-h1-2-bgr.png") bottom left no-repeat; line-height: 1.3em; padding-left: 1em; margin-bottom: 1em; position: relative; left: -1em;}
+
+.advantage-content{}
+.advantage-content ul li{font-family: "OpenSansRegular", sans-serif; font-size: 14px; padding-bottom: 22px;color: #000; font-weight: normal;}
+.advantage-content ul li a{color: #000; font-weight: normal;}
+.advantage-content ul li a:link{color: #000;color: #000; font-weight: normal;}
+.advantage-content ul li a:visited{color: #000;color: #000; font-weight: normal;}
+.advantage-content ul li a:hover{color: #000;color: #000; font-weight: normal;}
+.advantage-content ul li a:active{color: #000;color: #000; font-weight: normal;}
+
+.advantages-desc a:focus {outline: 8px auto #ff0000 !important; outline-offset: 2px; font-weight: bold;}
+
+/*	
+	about
+	о нас
+	*/
+
+.block-about h1{color: #000; background:url("images/block1-h1-bgr.jpg") bottom left no-repeat; line-height: 1.3em; padding-left: 1.3em; position: relative; left: -1.3em;}
+.block-about .uppertext{color: #000; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+
+.about-outer{width: 100%; background:#efefee;margin-top: 4em;border-bottom:1px solid #019875;}
+.block-about{font-size: 1em;padding-bottom: 6em;}
+.block-about p{font-family: "OpenSansLight", sans-serif;font-size: 1em; padding-top: 2em;}
+.block-about ul{font-family: "OpenSansLight", sans-serif; padding-top: 2em;}
+.block-about li{font-family: "OpenSansLight", sans-serif;font-size: 1em;}
+
+.experts-image {}
+.experts-image *{text-align: center; margin:0 auto;padding-top:7.9375em; }
+
+/*
+	reviews button
+	
+	*/
+	
+	.reviews-button-outer{width: 100% !important; text-align: center; margin: 0 auto;}
+	.reviews-button{width: 19em; margin:0 auto; dispaly: block;}
+	.review-button{position: relative; top:-2.8em}
+
+/*
+	clients slider
+	клиенты, карусель
+	*/
+	
+	.clients{margin-bottom: 4em;}
+	.clients h1{color: #000; background:url("images/block1-h1-bgr.jpg") bottom left no-repeat; line-height: 1.3em; padding-left: 1.3em; position: relative; left: -1.3em;}
+	.clients .uppertext{color: #000; font-family: "OpenSansLight", sans-serif; font-size: 1em; position: relative; top: 1.575em;}
+		
+	.clients img{padding: 0 1em 0 1em;}
+	
+/*
+	feedback-form
+	форма обратной связи
+	*/
+
+.feedback-form-outer{width: 100%; /*height: 24.5em;*/background:url("images/feedback-background-image.jpg") no-repeat; background-size: cover;}
+	.feedback-form{width: 37em; margin:0 auto; padding-bottom:1em;}
+	.feedback-form *{text-align:center; margin:0 auto;}
+	.feedback-form input{display:inline; width:14em; height: 36px; line-height: 36px; border: 1px solid #8c9591; border-radius:2px;-o-border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;font-size:0.75em;color:#c1c1c1;padding-right:1.125em; margin-right: 1.125em; text-align: left;padding-left:0.625em;background:transparent;background:url("images/star-bgr.png") no-repeat right top; padding: 0 10px;}
+	.feedback-form .feedback-form-submit-button{display:inline; text-align: center;}
+	.feedback-form .feedback-form-submit-button img{width: 14em; padding-top: 2em;}
+	
+	.feedback-form h1{font-size:3.75em;padding: 0.5em 0 0.2em 0;color:#fff;}
+	.feedback-form h2{font-size:1.25em;padding:0 0 1.2em 0; font-family: "OpenSansLight", sans-serif !important; color: #fff;}
+
+/*
+	breadcrumbs
+	крошки
+	*/
+	
+	.breadcrumbs{color: #019875; font-size: 13px;}
+	
+/*
+	content
+	контент
+	*/
+	
+	.content{
+		padding-left: 35px !important;
+	}
+
+	.content h1,.content h2{
+		-font-family: "PobedaLight", sans-serif !important;
+		font-family: "OpenSansLight", sans-serif;
+	}
+	
+	.content h1{
+		font-size: 2em;
+	}
+
+	.content h2{
+		font-size: 1.8em;
+	}
+
+	.content h3{
+		font-family: "OpenSansLight", sans-serif;
+		font-size: 1.2em;
+	}
+	
+	.content table{
+		-width: 100%;
+	}
+	
+	.content td{
+		border: 1px solid #F1F1F1;
+		padding: 12px;
+	}
+	
+	.content p,	.content td *{
+		font-size: 1em; font-weight: normal;
+	}
+	
+	.content ul li{
+		list-style: disc;
+		margin-left: 12px;
+	}
+	
+/*
+	footer
+	подвал
+	*/
+
+.footer-outer{background: #FFF url("images/top-bgr.jpg") top repeat;}
+footer{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;padding: 2em 0;}
+footer a{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;}
+	footer a:link{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;}
+	footer a:visited{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;}
+	footer a:hover{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;}
+	footer a:active{color: #fff; font-family: "OpenSansLight", sans-serif !important; font-size: 1em;}
+footer .footer-left{}
+footer .footer-center{}
+footer .footer-right{}
+
+.safari_fix{padding-top: 240px;}
+
+.achievement-slides h3 {
+	margin: 5px 0;
+}
+
+.ctrlButtons a {opacity: 1;}
+.ctrlButtons a { 
+	display: inline-block;
+	opacity: 0.8; 
+	width: 52px; 
+	height: 37px; 
+}
+.ctrlButtons a.jcar-next { 
+	background:url("images/next-button.png") no-repeat; 
+}
+.ctrlButtons a.jcar-prev { 
+	background:url("images/prev-button.png") no-repeat; 
+}
+.ctrlButtons a:hover {opacity: 1;}
+
+.achive-slider {
+	position: relative;
+}
+
+.ctrlButtons {
+	position: absolute; 
+	top: -50px; 
+	right: 10px; 
+	z-index: 10;
+}
+
+.wins ul {
+	list-style-type: disc;
+}
+.wins ul li {
+	margin-bottom: 10px;
+}
+.wins ul li a {
+	display: block;
+}
+header.site-header #phone {
+	clear: both;
+	margin-bottom: 10px;
+}
+header.site-header #phone a {
+	color: #fff;
+}
+.h1-head-wrap {
+	display: inline-block;
+	margin-left: 0;
+}
+.h1-head {
+	position:absolute;
+	top:50px;
+	left:15px;
+}
+.h1-head h1 {
+	font-size: 23px;
+}
+.winner-text-right {
+	padding-top: 25px;
+	padding-left: 30px;
+}
+.winner-text-right h1 {
+	font-size: 28px;
+	padding-bottom: 2px;
+}
+.winner-text-right h1 span, .winner-text-right h1 a {
+	display: inline-block;
+	vertical-align: middle;
+} 
+.winner-text-right h1 span {
+	width: 90px;
+	height: 90px;
+}
+.winner-text-right h1 span img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.winner-text-right h1 a {
+	width: 230px;
+}
+.block-about .winner-text-right p {
+	padding-top: 0;
+}
+.site-content main {
+	overflow: auto;
+}

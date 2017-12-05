@@ -1,0 +1,96 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flexslider2 a:active,
+.flexslider4 a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.flexslider2 a:focus  {outline: none;}
+.flexslider4 a:focus  {outline: none;}
+.slides,
+.slides-advantages,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+
+.flexslider2 {margin: 0; padding: 0;}
+.flexslider2 .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider2 .slides img {width: 100%; display: block;}
+
+.flexslider4 {margin: 0; padding: 0;}
+.flexslider4 .slides-advantages > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider4 .slides-advantages img {width: 100%; display: block;}
+
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+.slides-advantages:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides-advantages {display: block;} 
+* html .slides-advantages {height: 1%;}
+
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+.no-js .slides-advantages > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider, .flexslider2, .flexslider4 {margin: 0; -padding-bottom: 2.75em; position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides, .flexslider2 .slides, .flexslider4 .slides, .flexslider4 .slides-advantages{zoom: 1;}
+
+
+.flexslider4 .flex-viewport{max-width: 838px;}
+
+
+.carousel li {margin-right: 5px}
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 52px; height: 37px; opacity: 1; margin: -20px 0 0; display: block; position: absolute; top: 0; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+
+.flex-direction-nav .flex-next {opacity: 1;}
+.flex-direction-nav .flex-prev {opacity: 1;}
+.flex-next {background:url("../images/next-button.png") no-repeat; opacity: 0.8; width: 52px; height: 37px; top:-35px; right: 5px;}
+.flex-prev {background:url("../images/prev-button.png") no-repeat; opacity: 0.8; width: 52px; height: 37px; top:-35px; right: 87px;}
+.flex-next:hover, .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {/*opacity: .3!important; filter:alpha(opacity=30); cursor: default;*/}
+
+/* personal main */
+.flexslider2 .flex-prev, .flexslider-2 .flex-prev {display: block; background:url("../images/personal-button-prev.png") no-repeat; background-size: contain; width: 55px; height: 55px; opacity: 1; top: 317px; left: 186px;}
+.flexslider2 .flex-next, .flexslider-2 .flex-next {display: block; background:url("../images/personal-button-next-active.png") no-repeat; background-size: contain; width: 55px; height: 55px; opacity: 1; top: 317px; left: 241px;}
+
+/* personal work */
+.flexslider4 .flex-prev {display: block; background:url("../images/personal-button-prev.png") no-repeat; background-size: contain; width: 55px; height: 55px; opacity: 0.8; top: 295px; left: 356px;}
+.flexslider4 .flex-next {display: block; background:url("../images/personal-button-next-active.png") no-repeat; background-size: contain; width: 55px; height: 55px; opacity: 0.8; top: 295px; left: 411px;}
+
+/*
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+*/
